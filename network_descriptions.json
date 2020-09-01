@@ -1,0 +1,148 @@
+{"Adolescent health": {"description":"This directed network was created from a survey that took place in 1994/1995. Each student was asked to list his 5 best female and his 5 male friends. A node represents a student and an edge between two students shows that the left student chose the right student as a friend. Higher edge weights indicate more interactions and a edge weight shows that there is no common activity at all.",
+"citation":"James Moody. Peer influence groups: Identifying dense clusters in large networks. Soc. Netw., 23(4):261–283, 2001.",
+"URL":"http://konect.cc/networks/moreno_health/"}, 
+
+"Arxiv CondMat":{"description":"This is the co-authorship network of based on preprints posted to Condensed Matter section of arXiv E-Print Archive between 1995 and 1999.",
+"citation":"Newman, M. E. J., 2001. The structure of scientific collaboration networks. PNAS 98, 404-409.",
+"URL":"https://toreopsahl.com/datasets/#newman2001"},
+
+"Arxiv GrQc":{"description":"Scientific collaborations between authors of papers submitted to arxiv.org spanning January 1993 to April 2003. If an author i co-authored a paper with author j, the graph contains a undirected edge from i to j. If the paper is co-authored by k authors this generates a completely connected (sub)graph on k nodes.",
+"citation":"Leskovec, J. Kleinberg and C. Faloutsos. Graph Evolution: Densification and Shrinking Diameters. ACM Transactions on Knowledge Discovery from Data 1(1), article 2 (2007).",
+"URL":"http://snap.stanford.edu/data/ca-GrQc.html"},
+
+"Arxiv HepTh":{"description":"Weighted network of coauthorships between scientists posting preprints on the High-Energy Theory E-Print Archive between Jan 1, 1995 and December 31, 1999.",
+"citation":"Newman, M. E. J., 2001. The structure of scientific collaboration networks. PNAS 98, 404-409.",
+"URL":"http://www-personal.umich.edu/~mejn/netdata/hep-th.zip"}, 
+
+"Blogs":{"description":"This directed network contains front-page hyperlinks between blogs in the context of the 2004 US election. A node represents a blog and an edge represents a hyperlink between two blogs.",
+"citation":"Lada A. Adamic and Natalie Glance. The political blogosphere and the 2004 US election: Divided they blog. In Proc. Int. Workshop on Link Discov., pages 36–43, 2005.",
+"URL":"http://konect.cc/networks/moreno_blogs/"}, 
+
+"CKM physicians":{"description":"A network of trust relationships among physicians in 1966 in four towns in Illinois, as measured by social survey methods. The three adjacency matrices represent 'advice', 'discussion' and 'friend' networks among these physicians. Edge count below is the sum across these three matrices.",
+"citation":"R. Burt, Social contagion and innovation: Cohesion versus structural equivalence. American Journal of Sociology 92, 1287-1335 (1987).",
+"URL":"http://moreno.ss.uci.edu/data.html#ckm"},
+
+"Club membership":{"description":"This bipartite network contains membership information of corporate executive officers in social organizations such as clubs and boards. Left nodes represent persons and right nodes represent social organisations. An edge between a person and a social organization shows that the person is a member.",
+"citation":"Katherine Faust. Centrality in affiliation networks. Soc. Netw., 19(2):157–191, 1997.",
+"URL":"http://konect.cc/networks/brunson_club-membership/"}, 
+
+"Dolphins":{"description":"An undirected social network of frequent associations observed among 62 dolphins (Tursiops) in a community living off Doubtful Sound, New Zealand, from 1994-2001. The two versions listed below are equivalent.",
+"citation":"D. Lusseau et al., The bottlenose dolphin community of Doubtful Sound features a large proportion of long-lasting associations. Behavioral Ecology and Sociobiology 54(4), 396-405 (2003). ",
+"URL":"http://www-personal.umich.edu/~mejn/netdata/dolphins.zip"}, 
+
+"Email Enron":{"description":"The Enron email network consists of 1,148,072 emails sent between employees of Enron between 1999 and 2003. Nodes in the network are individual employees and edges are individual emails. It is possible to send an email to oneself, and thus this network contains loops.",
+"citation":"Bryan Klimt and Yiming Yang. The Enron corpus: A new dataset for email classification research. In Proc. Eur. Conf. on Mach. Learn., pages 217–226, 2004.",
+"URL":["http://snap.stanford.edu/data/email-Enron.html","http://konect.cc/networks/enron/","http://www.cs.cmu.edu/~enron/"]}, 
+
+"Email Eu Core":{"description":"The network was generated using email data from a large European research institution. We have anonymized information about all incoming and outgoing email between members of the research institution. There is an edge (u, v) in the network if person u sent person v at least one email.",
+"citation":"Leskovec, J. Kleinberg and C. Faloutsos. Graph Evolution: Densification and Shrinking Diameters. ACM Transactions on Knowledge Discovery from Data 1(1), article 2 (2007).",
+"URL":"https://snap.stanford.edu/data/email-Eu-core.html"}, 
+
+"Email Spain":{"description":"A network representing the exchange of emails among members of the Rovira i Virgili University in Spain, in 2003.",
+"citation":"R. Guimera, L. Danon, A. Diaz-Guilera, F. Giralt and A. Arenas, Self-similar community structure in a network of human interactions. Physical Review E 68, 065103(R) (2003).",
+"URL":"http://deim.urv.cat/~alexandre.arenas/data/xarxes/email.zip"}, 
+
+"Facebook":{"description":"This directed networks contains Facebook user–user friendships. A node represents a user. An edge indicates that the user represented by the left node is a friend of the user represented by the right node.",
+"citation":"Julian McAuley and Jure Leskovec. Learning to discover social circles in ego networks. In Adv. in Neural Inf. Process. Syst., pages 548–556. 2012.",
+"URL":"http://konect.cc/networks/ego-facebook/"}, 
+
+"Freeman's EIES":{"description":"Three social networks of researchers studying social networks in 1978. Two networks capture the personal relationships among the researchers at the beginning and end of the study period, and a third counts the number of messages exchanged among a subset of these during the period.",
+"citation":"S.C. Freeman and L.C. Freeman, The networkers network: A study of the impact of a new communications medium on sociometric structure. Social Science Research Reports 46. UC Irvine (1979)",
+"URL":"https://toreopsahl.com/datasets/#FreemansEIES"}, 
+
+"Golden Age":{"description":"A network of all collaborations among 55 actors who were prominent during the Golden Age of Hollywood (1930-1959). Nodes are actors and each edge represents those actors appearing together in a movie. Edge direction points toward the actor with 'better' billing status. Collaborations were extracted from the Internet Movie Database (IMDb) and span 1909-2009. Data available as both a temporal network (sequence of graphs, each spanning 10 years) and as single aggregated network.",
+"citation":"D. Taylor, S. A. Myers, A. Clauset, M. A. Porter, and P. J. Mucha, Eigenvector-Based Centrality Measures for Temporal Networks. Multiscale Model Simul. 15(1), 537–574 (2017).",
+"URL":"http://tuvalu.santafe.edu/~aaronc/data/GoldenAgeOfHollywood_networkdata.zip"}, 
+
+"Gplus":{"description":"This directed network contains Google+ user–user links. A node represents a user, and a directed edge denotes that one user has the other user in his circles.",
+"citation":"Julian McAuley and Jure Leskovec. Learning to discover social circles in ego networks. In Adv. in Neural Inf. Process. Syst., pages 548–556. 2012.",
+"URL":"http://konect.cc/networks/ego-gplus/"}, 
+
+"Highland tribes":{"description":"This is the signed social network of tribes of the Gahuku–Gama alliance structure of the Eastern Central Highlands of New Guinea, from Kenneth Read (1954). The network contains sixteen tribes connected by friendship ('rova') and enmity ('hina').",
+"citation":"Kenneth E. Read. Cultures of the Central Highlands, New Guinea. Southwestern J. of Anthropol., 10(1):1–43, 1954.",
+"URL":"http://konect.cc/networks/ucidata-gama/"}, 
+
+"Highschool":{"description":"This directed network contains friendships between boys in a small highschool in Illinois. Each boy was asked once in the fall of 1957 and the spring of 1958. This dataset aggregates the results from both dates. A node represents a boy and an edge between two boys shows that the left boy chose the right boy as a friend. The edge weights show how often that happened. As a boy could choose the same boy twice edge values from 1 to 2 are allowed.",
+"citation":"James Samuel Coleman. Introduction to mathematical sociology. London Free Press Glencoe, 1964.",
+"URL":"http://konect.cc/networks/moreno_highschool/"}, 
+
+"Hollywood music":{"description":"A bipartite network of collaborations among 40 film score composers and the 62 producers who produced a minimum of five movies in Hollywood from 1964 - 1976. Edge values indicate the number of collaborations. The names of the top 5 earning composers during this period are included.",
+"citation":"R.R. Faulkner, Music on Demand. Composers and Careers in the Hollywood Film Industry. New Brunswick: Transaction Books. (1983).",
+"URL":"http://vlado.fmf.uni-lj.si/pub/networks/data/esna/movies.htm"}, 
+
+"Hypertext":{"description":"This is the network of face-to-face contacts of the attendees of the ACM Hypertext 2009 conference. The ACM Conference on Hypertext and Hypermedia 2009 (HT 2009, http://www.ht2009.org/) was held in Turin, Italy over three days from June 29 to July 1, 2009. In the network, a node represents a conference visitor, and an edge represents a face-to-face contact that was active for at least 20 seconds. Multiple edges denote multiple contacts. Each edge is annotated with the time at which the contact took place.",
+"citation":"Lorenzo Isella, Juliette Stehlé, Alain Barrat, Ciro Cattuto, Jean-François Pinton, and Wouter Van den Broeck. What's in a crowd? analysis of face-to-face behavioral networks. J. of Theoretical Biology, 271(1):166–180, 2011.",
+"URL":"http://konect.cc/networks/sociopatterns-hypertext/"}, 
+
+"Intra-organizational":{"description":"Four networks derived by social survey methodology of advice requests, subjective value of the advice, and the awareness of skills, among (i) employees at a consulting company and (ii) members of a research team at a manufacturing company.",
+"citation":"R. Cross and A. Parker, The Hidden Power of Social Networks. Harvard Business School Press (2004).",
+"URL":"https://toreopsahl.com/datasets/#Cross_Parker"}, 
+
+"Jazz musicians":{"description":"This is the collaboration network between Jazz musicians. Each node is a Jazz musician and an edge denotes that two musicians have played together in a band. The data was collected in 2003.",
+"citation":"Pablo M. Gleiser and Leon Danon. Community structure in jazz. Advances in Complex Systems, 6(4):565–573, 2003.",
+"URL":"http://konect.cc/networks/arenas-jazz/"}, 
+
+"Kapferer tailor":{"description":"This temporal network represents interactions between employees in a tailor shop in Zambia during negotiations for higher wages. There are three edge types to represent 'instrumental' interactions between employees, social interaction between employees, and a third to indicate both. The second network data was gathered after 7 months.",
+"citation":"B. Kapferer, Strategy and transaction in an African factory. Manchester University Press (1972)",
+"URL":"https://www.stats.ox.ac.uk/~snijders/siena/kapfdata.htm"}, 
+
+"Karate club":{"description":"This is the well-known and much-used Zachary karate club network. The data was collected from the members of a university karate club by Wayne Zachary in 1977. Each node represents a member of the club, and each edge represents a tie between two members of the club. The network is undirected. An often discussed problem using this dataset is to find the two groups of people into which the karate club split after an argument between two teachers.",
+"citation":"Wayne Zachary. An information flow model for conflict and fission in small groups. J. of Anthropol. Res., 33:452–473, 1977.",
+"URL":"http://konect.cc/networks/ucidata-zachary/"}, 
+
+"Les Miserables": {"description":"The network of scene coappearances of characters in Victor Hugo's novel 'Les Miserables.' Edge weights denote the number of such occurrences.",
+"citation":"D. E. Knuth, The Stanford GraphBase: A Platform for Combinatorial Computing. Addison-Wesley, Reading, MA (1993).",
+"URL":"http://www-personal.umich.edu/~mejn/netdata/lesmis.zip"}, 
+
+"Marvel": {"description":"The Marvel Universe collaboration network, where two Marvel characters are considered linked if they jointly appear in the same Marvel comic book.",
+"citation":"R. Alberich, J. Miro-Julia, and F. Rossello, Marvel Universe looks almost like a real social network. arxiv:cond-mat/0202174 (2002).",
+"URL":"http://bioinfo.uib.es/~joemiro/marvel/porgat.txt"},
+
+"NFL":{"description":"The network of games played by all 32 NFL professional football teams in 2009 (regular and post-season games only). Edge weights represent the score difference of each game played by the pair of teams, excluding overtime. Metadata includes conference and division labels for nodes.",
+"citation":"C. Aicher, A.Z. Jacobs, and A. Clauset. Learning Latent Block Structure in Weighted Networks. J. Complex Networks 3(2), 221-248 (2015).",
+"URL":"http://tuvalu.santafe.edu/~aaronc/wsbm/NFL2009_network.zip"}, 
+
+"Network science":{"description":"A coauthorship network among scientists working on network science, from 2006. This network is a one-mode projection from the bipartite graph of authors and their scientific publications.",
+"citation":"M. E. J. Newman, Finding community structure in networks using the eigenvectors of matrices. Phys. Rev. E 74, 036104 (2006).",
+"URL":"http://www-personal.umich.edu/~mejn/netdata/netscience.zip"},
+
+"Prison":{"description":"A network of friendship among prison inmates, from c.1950. Each inmate was asked to identify other inmates on the same tier as close friends (any number). A directed edge (i,j) indicates that inmate i identified inmate j as a friend.",
+"citation":"MacRae J. (1960). Direct factor analysis of sociometric data. Sociometry, 23, 360-371.",
+"URL":"http://vlado.fmf.uni-lj.si/pub/networks/data/ucinet/ucidata.htm#prison"}, 
+
+"Residence hall": {"description":"This directed network contains friendship ratings between 217 residents living at a residence hall located on the Australian National University campus. Cynthia Webster collected friendship data among the 217 residents living at a residence hall located on the Australian National University campus. Residents were interviewed individually at the start of the second semester.",
+"citation":"Linton Clarke Freeman, Cynthia Marie Webster, and Deirdre M. Kirke. Exploring social structure using dynamic three-dimensional color images. Soc. Netw., 20(2):109–118, 1998",
+"URL":"http://konect.cc/networks/moreno_oz/"}, 
+
+"Sampson's monastery":{"description":"This directed network contains ratings between monks related to a crisis in a cloister (or monastery) in New England (USA) which lead to the departure of several of the monks. This dataset aggregates several available ratings ((dis)esteem, (dis)liking, positive/negative influence, praise/blame) into only one rating, which is positive if all original ratings were positive and negative if all original ratings were negative. If there were mixed opinions the rating has the value 0. A node represents a monk and an edge between two monks shows that the left monk rated the right monk.",
+"citation":"S. F. Sampson.A novitiate in a period of change: An experimental and casestudy of social relationships.PhD thesis, Cornell University, 1968",
+"URL":"http://konect.cc/networks/moreno_sampson/"}, 
+
+"Seventh grade":{"description":"This directed network contains proximity ratings between students from 29 seventh grade students from a school in Victoria. Among other questions the students were asked to nominate their preferred classmates for three different activities. A node represents a student. An edge between two nodes shows that the left student picked the right student as his answer. The edge weights are between 1 and 3 and show how often the left student chose the right student as his favourite.",
+"citation":"Duncan J. Watts and Steven H. Strogatz. Collective dynamics of `small-world' networks. Nature, 393(1):440–442, 1998.",
+"URL":"http://konect.cc/networks/moreno_seventh/"},
+
+"Taro exchange":{"description":"This undirected network contains gift-givings (taro) between households in a Papuan village. A node represents a household and an edge between two households indicates that there happened a gift-giving.",
+"citation":["Per Hage and Frank Harary. Structural Models in Anthropology. Cambridge Univ. Press, 1983.","Eric Schwimmer. Exchange in the Social Structure of the Orokaiva: Traditional and Emergent Ideologies in the Northern District of Papua. St. Martin's Press, 1973."],
+"URL":"http://konect.cc/networks/moreno_taro/"}, 
+
+"Terrorist":{"description":"Network of individuals and their known social associations, centered around the hijackers that carried out the September 11th, 2001 terrorist attacks. Associations extracted after-the-fact from public data. Metadata labels say which plane a person was on, if any, on 9/11.",
+"citation":"V. Krebs, Mapping networks of terrorist cells. Connections 24, 43-52 (2002).",
+"URL":"http://tuvalu.santafe.edu/~aaronc/datacode.htm"}, 
+
+"Twitter":{"description":"This directed networks contains Twitter user–user following information. A node represents a user. An edge indicates that the user represented by the left node follows the user represented by the right node.",
+"citation":"Julian McAuley and Jure Leskovec. Learning to discover social circles in ego networks. In Adv. in Neural Inf. Process. Syst., pages 548–556. 2012.",
+"URL":"http://konect.cc/networks/ego-twitter/"}, 
+
+"UC Irvine":{"description":"Network of private message interactions among members of an online community of students at University of California, Irvine, collected between April and October 2004.",
+"citation":"T. Opsahl and P. Panzarasa, Clustering in weighted networks. Social Networks 31(2),155-163 (2009)",
+"URL":"https://toreopsahl.com/datasets/#online_social_network"}, 
+
+"Web of Trust":{"description":"List of edges of the giant component of the network of users of the Pretty-Good-Privacy (PGP) algorithm for secure information interchange, from 2004",
+"citation":"M. Boguna, R. Pastor-Satorras, A. Diaz-Guilera and A. Arenas, Models of social networks based on social distance attachment. Physical Review E 70, 056122 (2004)",
+"URL":"http://deim.urv.cat/~alexandre.arenas/data/xarxes/PGP.zip"},
+
+"Web of Trust (2009)":{"description":"Strongly connected component of the Pretty-Good-Privacy (PGP) web of trust among users, circa November 2009.",
+"citation":"O. Richters and T. P. Peixoto, Trust Transitivity in Social Networks. PLoS ONE 6(4): e18384 (2011).",
+"URL":"https://git.skewed.de/count0/graph-tool/raw/22cf7c5ae19fc40455c9f49a1597f03845b935b5/src/graph_tool/collection/pgp-strong-2009.xml.gz"}
+}
