@@ -10,7 +10,9 @@ During my research I preprocessed the networks so that they were undirected, unw
 
 # Usage
 
-~~You can install the python package via `pip install social-networks-collection`~~ <p style="color:red"> NOT YET!! </p>
+You can install the python package via
+
+`pip install social-networks-collection`
 
 1. To show network details and load into a networkx Graph
 
