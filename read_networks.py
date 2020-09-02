@@ -303,9 +303,9 @@ def read_pgp():
 
 
 def read_pgp2009():
-    # # run this once to reformat raw data file
+    # # run this once to reformat raw data file. Make sure to gunzip the downloaded .gz file
     # file = NETWORKS_DIR + "pgp_trust2009/pgp-strong-2009.xml"
-    # tree = ET.parse(file) # make sure to gunzip the downloaded .gz file 
+    # tree = ET.parse(file)  
     # root = tree.getroot()
     # prefix = "{http://graphml.graphdrawing.org/xmlns}"
     # graph = root.find(prefix + "graph")
@@ -616,6 +616,34 @@ def read_twitter():
     return get_giant_component(G)
 
 
+def read_polbooks():
+    # # run this once to reformat raw data file make sure to gunzip the downloaded .gz file
+    # file = NETWORKS_DIR + "polbooks/polbooks.xml"
+    # tree = ET.parse(file) #  
+    # root = tree.getroot()
+    # prefix = "{http://graphml.graphdrawing.org/xmlns}"
+    # graph = root.find(prefix + "graph")
+    # edges = graph.findall(prefix + "edge")
+
+    # sources, targets = [], []
+    # for child in edges:
+    #     edge = child.attrib # a dictionary with "source" and "target" as keys
+    #                         # values can be n123 n44, indicating an edge 123-->44
+    #     source = edge["source"].lstrip("n")
+    #     target = edge["target"].lstrip("n")
+    #     sources.append(source)
+    #     targets.append(target)
+    # # write a newly formatted file
+    # new_file = NETWORKS_DIR + "polbooks/polbooks.txt"
+    # with open(new_file, "w") as f:
+    #     for s,t in zip(sources, targets):
+    #         f.write("{} {}\n".format(s,t))
+
+    file = NETWORKS_DIR + "polbooks/polbooks.txt"
+    G = nx.read_edgelist(file, create_using=nx.Graph, nodetype=int)
+    return G
+
+
 # dictionary that gives the corresponding read function
 NETWORKS_DICT = {"Adolescent health": read_adolescent,
                 "Arxiv CondMat": read_arxiv_CondMat,
@@ -654,7 +682,8 @@ NETWORKS_DICT = {"Adolescent health": read_adolescent,
                 "Sampson's monastery": read_Sampson,
                 "Seventh grade": read_seventh,
                 "Taro exchange": read_taro,
-                "Twitter": read_twitter}
+                "Twitter": read_twitter,
+                "Political books": read_polbooks}
 
 
 # a list of small networks to test network algorithms on

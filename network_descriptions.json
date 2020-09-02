@@ -144,5 +144,9 @@
 
 "Web of Trust (2009)":{"description":"Strongly connected component of the Pretty-Good-Privacy (PGP) web of trust among users, circa November 2009.",
 "citation":"O. Richters and T. P. Peixoto, Trust Transitivity in Social Networks. PLoS ONE 6(4): e18384 (2011).",
-"URL":"https://git.skewed.de/count0/graph-tool/raw/22cf7c5ae19fc40455c9f49a1597f03845b935b5/src/graph_tool/collection/pgp-strong-2009.xml.gz"}
+"URL":"https://git.skewed.de/count0/graph-tool/raw/22cf7c5ae19fc40455c9f49a1597f03845b935b5/src/graph_tool/collection/pgp-strong-2009.xml.gz"},
+
+"Political books":{"description":"This is a network of books about US politics published around the time of the 2004 presidential election and sold by the online bookseller Amazon.com. Edges between books represent frequent copurchasing of books by the same buyers. The network was compiled by V. Krebs and is unpublished, but can found on Krebs' web site (http://www.orgnet.com/).",
+"citation":"This dataset was compiled by Valdis Krebs, but is unpublished.",
+"URL:":"https://git.skewed.de/count0/graph-tool/raw/22cf7c5ae19fc40455c9f49a1597f03845b935b5/src/graph_tool/collection/polbooks.xml.gz"}
 }
