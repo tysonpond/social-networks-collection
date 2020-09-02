@@ -2,11 +2,11 @@
 
 ### What is this? 
 
-This repository serves as a collection of 37 (*last updated this: 2020-08-31*) social and information networks that I have investigated during my research, primarily during my [M.S. thesis](https://scholarworks.uvm.edu/cgi/viewcontent.cgi?article=2240&context=graddis) at the [University of Vermont](https://www.uvm.edu/). Many of the networks are relatively small (0-1,000 nodes), but a few have as many as 100,000 nodes. These networks describe collaborations (musicians, scientists, etc.), friendships (human, animal, and fictional), blogging, emails, and more! Obviously there are many more networks that could be included; my criteria for selecting networks was a weighted combination of: (i) relatively small size, (ii) personally interesting, (iii) popularity/citations, (iv) usefulness/importance. **Code is written in Python and networkx is used to load the networks.**
+This repository serves as a collection of 37 (*last updated this: 2020-09-01*) social and information networks that I have investigated during my research, primarily for my [M.S. thesis](https://scholarworks.uvm.edu/cgi/viewcontent.cgi?article=2240&context=graddis) at the [University of Vermont](https://www.uvm.edu/). Many of the networks are relatively small (0-1,000 nodes), but a few have as many as 100,000 nodes. These networks describe collaborations (musicians, scientists, etc.), friendships (human, animal, and fictional), blogging, emails, and more! Obviously there are many more networks that could be included; my criteria for selecting networks was a combination of: (i) relatively small size, (ii) personally interesting, (iii) popularity/citations, (iv) usefulness/importance. **Code is written in Python and networkx is used to load the networks.**
 
 ### Why is this useful? 
 
-Many hours were spent finding, downloading, understanding, preprocessing, and loading these networks. In particular, downloading networks from disparate sources gives a range of file formats which have to be read in different ways. These lengthy steps present a significant barrier for researchers trying to quickly utilize several networks. Note: there are a couple similar projects which are worth checking into (i.e. Pajek).
+Many hours were spent finding, downloading, understanding, preprocessing, and loading these networks. In particular, downloading networks from disparate sources gives a range of file formats which have to be read in different ways. These lengthy steps present a significant barrier for researchers trying to quickly utilize several networks. Note: there are a couple similar projects which are worth checking into (i.e. [Pajek](http://vlado.fmf.uni-lj.si/pub/networks/pajek/)).
 
 I hope this can be a quick way to load and analyze some interesting social networks, particularly for people who are learning data science/social network analysis. You could study a single network or examine properties of the whole collection. Advanced researchers may use the whole collection for testing network algorithms or visualizations.
 
@@ -14,7 +14,7 @@ I hope this can be a quick way to load and analyze some interesting social netwo
 
 1. During my research, I preprocessed the networks so that they were undirected, unweighted, static, and connected. I also disregarded metadata if it was provided. In the future, I will make such options configurable.
 
-2. The information in `network_descriptions.JSON` is not always accurate because it corresponds to the raw data (before preprocessing). Also, I copied the descriptions from the sources I got them -- so they may include typos or not be very informative. I hope to clean this up eventually.
+2. The descriptions in `network_descriptions.json` are not always accurate because they correspond to the raw data (before preprocessing). Also, I copied the descriptions from the sources I got them -- so they may include typos or not be very informative. I hope to clean this up eventually. The citations and urls provided should be accurate. 
 
 # Usage
 

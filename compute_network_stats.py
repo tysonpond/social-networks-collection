@@ -81,4 +81,3 @@ if __name__ == "__main__":
 	# save full stats for smaller networks & print LaTeX table
     save_network_stats_table(SMALL_NETWORKS, STATS_DICT.keys(), "small_networks_stats.csv",
 		round_to=3, sort_by="density", print_latex=True)
-    

@@ -4,6 +4,7 @@ import re
 from networkx.algorithms import bipartite
 import matplotlib.pyplot as plt
 import json
+import xml.etree.ElementTree as ET
 
 NETWORKS_DIR = "NETWORKS/" # path to networks directory (change this if you move it)
 
@@ -298,6 +299,34 @@ def read_pgp():
             
     G = nx.Graph()
     G.add_edges_from(elist)
+    return G
+
+
+def read_pgp2009():
+    # # run this once to reformat raw data file
+    # file = NETWORKS_DIR + "pgp_trust2009/pgp-strong-2009.xml"
+    # tree = ET.parse(file) # make sure to gunzip the downloaded .gz file 
+    # root = tree.getroot()
+    # prefix = "{http://graphml.graphdrawing.org/xmlns}"
+    # graph = root.find(prefix + "graph")
+    # edges = graph.findall(prefix + "edge")
+
+    # sources, targets = [], []
+    # for child in edges:
+    #     edge = child.attrib # a dictionary with "source" and "target" as keys
+    #                         # values can be n123 n44, indicating an edge 123-->44
+    #     source = edge["source"].lstrip("n")
+    #     target = edge["target"].lstrip("n")
+    #     sources.append(source)
+    #     targets.append(target)
+    # # write a newly formatted file
+    # new_file = NETWORKS_DIR + "pgp_trust2009/pgp-strong-2009.txt"
+    # with open(new_file, "w") as f:
+    #     for s,t in zip(sources, targets):
+    #         f.write("{} {}\n".format(s,t))
+
+    file = NETWORKS_DIR + "pgp_trust2009/pgp-strong-2009.txt"
+    G = nx.read_edgelist(file, create_using=nx.Graph, nodetype=int)
     return G
 
 
@@ -606,7 +635,8 @@ NETWORKS_DICT = {"Adolescent health": read_adolescent,
                 "Network science": read_netscience, 
                 "NFL": read_NFL, 
                 "Intra-organizational": read_org, 
-                "Web of Trust": read_pgp, 
+                "Web of Trust": read_pgp,
+                "Web of Trust (2009)": read_pgp2009, 
 ##                "Sampson's monastery": read_Sampson_Pajek, 
                 "Terrorist": read_terrorist,
                 "UC Irvine": read_UC_Irvine, 
@@ -652,8 +682,3 @@ if __name__ == "__main__":
     G = read_any("Sampson's monastery", print_info=True)
     nx.draw(G)
     plt.show()
-
-    
- 
-
-
