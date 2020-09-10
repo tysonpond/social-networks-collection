@@ -617,7 +617,7 @@ def read_twitter():
 
 
 def read_polbooks():
-    # # run this once to reformat raw data file make sure to gunzip the downloaded .gz file
+    # # run this once to reformat raw data file. Make sure to gunzip the downloaded .gz file
     # file = NETWORKS_DIR + "polbooks/polbooks.xml"
     # tree = ET.parse(file) #  
     # root = tree.getroot()
