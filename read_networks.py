@@ -693,7 +693,8 @@ SMALL_NETWORKS = ["CKM physicians", "Dolphins", "Freeman's EIES",
 
 def get_network_info(name):
     with open("network_descriptions.JSON", "r") as f:
-        info = json.loads(f.read())
+        info = json.load(f)
+
     return info[name]
 
 def read_any(name, print_info=False):        
@@ -701,7 +702,13 @@ def read_any(name, print_info=False):
     
     # print network info (description, citation, etc.) listed in network_descriptions.json
     if print_info == True:
-        print(get_network_info(name))
+        info = get_network_info(name) # get network info
+
+        # format info and display
+        print(name)
+        lk = max([len(key) for key in info]) # longest key (most characters) for formatting purposes
+        for key in info:
+            print(" "*2, key.ljust(lk), "|", info[key])            
 
     return NETWORKS_DICT[name]()
 

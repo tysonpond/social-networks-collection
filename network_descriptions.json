@@ -1,4 +1,5 @@
-{"Adolescent health": {"description":"This directed network was created from a survey that took place in 1994/1995. Each student was asked to list his 5 best female and his 5 male friends. A node represents a student and an edge between two students shows that the left student chose the right student as a friend. Higher edge weights indicate more interactions and a edge weight shows that there is no common activity at all.",
+{
+"Adolescent health": {"description":"This directed network was created from a survey that took place in 1994/1995. Each student was asked to list his 5 best female and his 5 male friends. A node represents a student and an edge between two students shows that the left student chose the right student as a friend. Higher edge weights indicate more interactions and a edge weight shows that there is no common activity at all.",
 "citation":"James Moody. Peer influence groups: Identifying dense clusters in large networks. Soc. Netw., 23(4):261–283, 2001.",
 "URL":"http://konect.cc/networks/moreno_health/"}, 
 
@@ -148,5 +149,5 @@
 
 "Political books":{"description":"This is a network of books about US politics published around the time of the 2004 presidential election and sold by the online bookseller Amazon.com. Edges between books represent frequent copurchasing of books by the same buyers. The network was compiled by V. Krebs and is unpublished, but can found on Krebs' web site (http://www.orgnet.com/).",
 "citation":"This dataset was compiled by Valdis Krebs, but is unpublished.",
-"URL:":"https://git.skewed.de/count0/graph-tool/raw/22cf7c5ae19fc40455c9f49a1597f03845b935b5/src/graph_tool/collection/polbooks.xml.gz"}
+"URL":"https://git.skewed.de/count0/graph-tool/raw/22cf7c5ae19fc40455c9f49a1597f03845b935b5/src/graph_tool/collection/polbooks.xml.gz"}
 }
